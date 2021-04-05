@@ -1,0 +1,24 @@
+@font-face {
+  font-family: SourceSansPro-BlackIt;
+  src: url(font/SourceSansPro-Black.otf);
+}
+
+body {
+  background: url(img/texture.png) no-repeat center/cover;
+}
+
+h1 {
+  color: blueviolet;
+  font-family: SourceSansPro-Black, sans-serif;
+}
+img,
+video {
+  width: 200px;
+  box-shadow: 3px 5px 6px rgb(60, 3, 114);
+}
+ul {
+  text-align: center;
+}
+.formation {
+  border: 3px blueviolet inset;
+}

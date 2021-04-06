@@ -6,10 +6,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html,
 body {
   width: 1200px;
@@ -17,12 +15,9 @@ body {
 
 body {
   background: url(img/texture.png) no-repeat center/cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
-
 .banniere,
 .container {
   margin: 1rem;
@@ -31,22 +26,18 @@ body {
 .banniere {
   width: 150px;
   height: 500px;
-  background: #250642;
+  background: rgb(37, 6, 66);
   border-radius: 10px;
   position: relative;
+  img {
+    width: 50%;
+    box-shadow: none;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+  }
 }
-
-.banniere img {
-  width: 50%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 h1,
 P {
   text-align: center;
@@ -63,11 +54,8 @@ h2 {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section {
   width: 33%;
 }
@@ -75,15 +63,11 @@ section {
 img,
 video {
   width: 200px;
-  -webkit-box-shadow: 3px 5px 6px #3c0372;
-          box-shadow: 3px 5px 6px #3c0372;
+  box-shadow: 3px 5px 6px rgb(60, 3, 114);
 }
-
 ul {
   text-align: center;
 }
-
 .formation {
   border: 3px blueviolet inset;
 }
-/*# sourceMappingURL=style.css.map */

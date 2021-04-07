@@ -18,7 +18,7 @@ body {
 }
 .banniere,
 .container {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .banniere {
@@ -36,10 +36,10 @@ body {
     transform: translate(-50%, -50%);
   }
 }
-
 .cv {
   position: relative;
   width: 100%;
+  margin: 1em;
 }
 
 h1,
@@ -51,6 +51,9 @@ h1 {
   color: blueviolet;
   font-family: SourceSansPro-Black, sans-serif;
   font-size: 3em;
+  border: 3px blueviolet inset;
+  border-radius: 25px;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -60,6 +63,9 @@ h2 {
 .container {
   display: flex;
   position: absolute;
+}
+section {
+  margin: 1em;
 }
 .lettre {
   display: grid;
@@ -72,14 +78,8 @@ video {
   width: 50px;
   box-shadow: 3px 5px 6px rgb(60, 3, 114);
   cursor: pointer;
-  &:hover,
-  &:active {
-    width: 100%;
-  }
 }
 ul {
-  text-align: center;
-}
-.formation {
-  border: 3px blueviolet inset;
+  list-style: url("/img/bullet_houbi.png");
+  margin-left: 1em;
 }

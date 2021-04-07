@@ -89,11 +89,7 @@ section {
       grid-template-columns: repeat(2, 0fr);
 }
 
-img,
-video {
-  width: 50px;
-  -webkit-box-shadow: 3px 5px 6px #3c0372;
-          box-shadow: 3px 5px 6px #3c0372;
+img {
   cursor: pointer;
 }
 

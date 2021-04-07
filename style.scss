@@ -73,10 +73,7 @@ section {
   grid-template-columns: repeat(2, 0fr);
 }
 
-img,
-video {
-  width: 50px;
-  box-shadow: 3px 5px 6px rgb(60, 3, 114);
+img {
   cursor: pointer;
 }
 ul {

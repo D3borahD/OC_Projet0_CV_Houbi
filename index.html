@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Houbi</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:900px) "
+      href="/responsive.css"
+    />
   </head>
   <body>
     <div class="banniere">
@@ -37,10 +42,12 @@
                   title="Clicquez pour agrandir"
                 />
               </a>
-              <img src="img/ABCDaireB.JPG" alt="AdéCédaire lettre B" />
-              <img src="img/ABCDaireE.jpg" alt="AdéCédaire lettre E" />
-              <img src="img/ABCDaireI.jpg" alt="AdéCédaire lettre I" />
-              <img src="img/ABCDaireT.JPG" alt="AdéCédaire lettre T" />
+              <div class="lettre">
+                <img src="img/ABCDaireB.JPG" alt="AdéCédaire lettre B" />
+                <img src="img/ABCDaireE.jpg" alt="AdéCédaire lettre E" />
+                <img src="img/ABCDaireI.jpg" alt="AdéCédaire lettre I" />
+                <img src="img/ABCDaireT.JPG" alt="AdéCédaire lettre T" />
+              </div>
               <figcaption>Visuels ABCDaire</figcaption>
             </figure>
 
@@ -48,7 +55,7 @@
             <figure>
               <img src="img/arbitrage8secs.jpg" alt="projet arbitrage" />
               <img src="img/arbitrage24secs.jpg" alt="projet arbitrage" />
-              <video controls width="500">
+              <video controls poster="/img/capture_video.png" width="500">
                 <source src="img/arbitrage3secs.mp4" type="video/mp4" />
                 Prototype
               </video>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: SourceSansPro-BlackIt;
-  src: url(font/SourceSansPro-Black.otf);
+  src: url("font/SourceSansPro-Black.otf");
 }
 
 * {
@@ -8,13 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  width: 1200px;
-}
 
 body {
-  background: url(img/texture.png) no-repeat center/cover;
+  max-width: 1200px;
+  height: 100vh;
+  background: url("img/texture.png") no-repeat center/cover fixed;
   display: flex;
   margin: auto;
 }
@@ -25,7 +23,7 @@ body {
 
 .banniere {
   width: 150px;
-  height: 500px;
+  height: 95vh;
   background: rgb(37, 6, 66);
   border-radius: 10px;
   position: relative;
@@ -38,6 +36,12 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
+.cv {
+  position: relative;
+  width: 100%;
+}
+
 h1,
 P {
   text-align: center;
@@ -55,15 +59,23 @@ h2 {
 
 .container {
   display: flex;
+  position: absolute;
 }
-section {
-  width: 33%;
+.lettre {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 0fr);
 }
 
 img,
 video {
-  width: 200px;
+  width: 50px;
   box-shadow: 3px 5px 6px rgb(60, 3, 114);
+  cursor: pointer;
+  &:hover,
+  &:active {
+    width: 100%;
+  }
 }
 ul {
   text-align: center;
